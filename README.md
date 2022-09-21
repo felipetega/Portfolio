@@ -1,2 +1,2 @@
 # Portfolio
- Aqui você poderá conhecer melhor meus trabalhos!
+ Aqui você poderá me conhecer melhor!
