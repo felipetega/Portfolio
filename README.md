@@ -1,6 +1,7 @@
 # Projetos
 ## Python
 ### Django
+#### [E-commerce](https://github.com/felipetega/e-commerce)
 #### [Gerenciador de Processos Seletivos](https://github.com/felipetega/GerenciadorDeProcessosSeletivos)
 ### Pandas
 #### [EmailAndReport - Gera tabelas e as envia por e-mail](https://github.com/felipetega/EmailAndReport)
