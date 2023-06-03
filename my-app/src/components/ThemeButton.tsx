@@ -1,19 +1,28 @@
-'use client'
-
 import React, { useState } from 'react'
+import { useEffect } from 'react'
+import { themeChange } from 'theme-change'
+import { FiSun , FiMoon } from 'react-icons/fi';
 
-export const ThemeButton = () => {
 
-    const [theme, setTheme] = useState('dark')
 
-    const toggleTheme = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark');
-      };
+const ThemeButton = () => {
 
+  const [mode, setMode] = useState()
+
+  useEffect(() => {
+    themeChange(false)
+    // 👆 false parameter is required for react project
+  }, [])
 
   return (
-    <button data-theme={theme} onClick={toggleTheme}>
-        Mude o tema
+    <button data-toggle-theme="dark,light,halloween" data-act-class="ACTIVECLASS">
+                {
+            mode === "dark" ?
+            <FiSun className={'fill-black'} />
+            : <FiMoon className={'fill-black'} />
+          }
     </button>
   )
 }
+
+export default ThemeButton

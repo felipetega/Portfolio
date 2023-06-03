@@ -6,6 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --my-color: #fff;
+  /* or any other variables/style */
+}
+[data-theme='dark'] {
+  --my-color: #000;
+}
+[data-theme='light'] {
+  --my-color: #ffabc8;
+}
+[data-theme='halloween'] {
+  --my-color: #008120;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,4 +25,8 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+html {
+  background-color: var(--my-color);
 }
