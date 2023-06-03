@@ -2,23 +2,44 @@
 import React from 'react'
 import Link from "next/link";
 import ThemeButton from './ThemeButton';
+import { AiFillLinkedin, AiFillGithub, AiFillLike } from 'react-icons/ai';
 
 const Navbar = () => {
 
   return (
-    <nav className="navbar bg-neutral">
-  <div className="flex-1">
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </div>
-  <div className="flex-none">
-    <ul className="menu menu-horizontal px-1">
-      <li><Link href={"/"}>Quem sou eu?</Link></li>
-      <li><Link href={"/projetos"}>Projetos</Link></li>
-      <li>
-        <ThemeButton />
-      </li>
-    </ul>
-  </div>
+    <nav className="navbar font-medium justify-between">
+
+      <ul className="menu menu-horizontal px-1">
+        <li><Link href={"/"}>Quem sou eu?</Link></li>
+        <li><Link href={"/projetos"}>Projetos</Link></li>
+        <li><Link href={"/"}>Skills</Link></li>
+      </ul>
+
+      <div className="menu menu-horizontal px-1">
+          <Link href={"/"}>
+            <AiFillLike size={30}/>
+          </Link>
+      </div>
+
+      <ul className="menu menu-horizontal px-1">
+
+        <li>
+          <Link href={"/"}>
+            <AiFillLinkedin size={30}/>
+          </Link>
+        </li>
+
+        <li>
+          <Link href={"/"}>
+            <AiFillGithub size={30}/>
+          </Link>
+        </li>
+
+        <li>
+          <ThemeButton />
+        </li>
+        
+      </ul>
 </nav>
   )
 }
