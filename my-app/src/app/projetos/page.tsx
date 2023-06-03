@@ -11,6 +11,11 @@ export default function page() {
       <SmallCard />
     </div>
     <LargeCard />
+    <div className="flex flex-col w-full lg:flex-row">
+      <SmallCard />
+      <SmallCard />
+      <SmallCard />
+    </div>
   </div>
   )
 }
