@@ -16,9 +16,12 @@ const ThemeButton = () => {
   };
 
   return (
-    <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" onClick={handleToggleTheme}>
-      {mode === "dark" ? <FiMoon className="fill-black" /> : <FiSun className="fill-black" />}
-    </button>
+<select data-choose-theme>
+<option value="light">Light</option>
+  <option value="dark">Dark</option>
+  <option value="halloween">Halloween</option>
+  <option value="valentine">Valentine</option>
+</select>
   );
 };
 

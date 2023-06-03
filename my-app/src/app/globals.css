@@ -3,27 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --my-color: #fff;
-  /* or any other variables/style */
-}
-[data-theme='dark'] {
-  --my-color: #000;
-}
-[data-theme='halloween'] {
-  --my-color: #fd0059;
-}
+/*  --my-color: #000;*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
+/* [data-theme='dark'] {
+  --my-color: #898b00;
+} */
 
-html {
-  background-color: var(--my-color);
-}
+/* * {
+  color: var(--my-color);
+} */
