@@ -12,11 +12,8 @@
 [data-theme='dark'] {
   --my-color: #000;
 }
-[data-theme='light'] {
-  --my-color: #ffabc8;
-}
 [data-theme='halloween'] {
-  --my-color: #008120;
+  --my-color: #fd0059;
 }
 
 @media (prefers-color-scheme: dark) {
