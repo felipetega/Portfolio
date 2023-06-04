@@ -6,16 +6,23 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 import { GiNightSky, GiEvilMoon, GiSun, GiHeartStake } from "react-icons/gi";
 
 const ThemeButton = () => {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("");
 
   useEffect(() => {
-    themeChange(false);
-    // false parameter is required for react project
+    const savedMode = localStorage.getItem('themeMode');
+    if (savedMode) {
+      setMode(savedMode);
+      themeChange(savedMode === '');
+    } else {
+      themeChange(false);
+    }
   }, []);
 
   const handleToggleTheme = (event: ChangeEvent<HTMLSelectElement>) => {
     const newMode = event.target.value;
     setMode(newMode);
+    localStorage.setItem('themeMode', newMode);
+    themeChange(newMode === '');
   };
 
   let selectedIcon;
