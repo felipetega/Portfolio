@@ -1,6 +1,8 @@
 import './globals.css'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Logo from "../components/Logo";
+import DynamicIcon from "../components/DynamicIcon";
 
 //FONTS
 import { Montserrat } from 'next/font/google';
@@ -20,11 +22,13 @@ export default function RootLayout({children}: {
       </head>
       <body className='my-5 "mx-2 md:mx-10 lg:mx-36 xl:mx-48 2xl:mx-60'>
         <header>
-        <Navbar />
+          <Logo />
+          <Navbar />
         </header>
         <main>
           {children}
         </main>
+        <DynamicIcon />
         <Footer />
       </body>
     </html>
