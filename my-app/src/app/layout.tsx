@@ -18,7 +18,7 @@ export default function RootLayout({children}: {
       <head>
 
       </head>
-      <body className='my-5 "mx-2 md:mx-10 lg:mx-24 xl:mx-32 2xl:mx-40'>
+      <body className='my-5 "mx-2 md:mx-10 lg:mx-36 xl:mx-48 2xl:mx-60'>
         <header>
         <Navbar />
         </header>

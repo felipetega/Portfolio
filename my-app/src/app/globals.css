@@ -1,11 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 :root {
 /*  --my-color: #000;*/
 
-}
+
 /* [data-theme='dark'] {
   --my-color: #898b00;
 } */

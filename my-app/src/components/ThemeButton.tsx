@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { themeChange } from 'theme-change';
 import { FiSun, FiMoon } from 'react-icons/fi';

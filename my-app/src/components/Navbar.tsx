@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Link from "next/link";
 import ThemeButton from './ThemeButton';
@@ -7,7 +6,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillLike } from 'react-icons/ai';
 const Navbar = () => {
 
   return (
-    <nav className="navbar font-medium justify-between">
+    <nav className="navbar border-b-4 border-black mb-8 font-medium justify-between">
 
       <ul className="menu menu-horizontal px-1">
         <li><Link href={"/"}>Quem sou eu?</Link></li>
