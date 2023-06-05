@@ -28,19 +28,19 @@ const ThemeButton = () => {
   let selectedIcon;
   switch (mode) {
     case "light":
-      selectedIcon = <FiSun size={30} />;
+      selectedIcon = <FiSun size={30} className='text-yellow-500' />;
       break;
     case "dark":
-      selectedIcon = <GiNightSky size={30} />;
+      selectedIcon = <GiNightSky size={30} className='text-yellow-500' />;
       break;
     case "halloween":
-      selectedIcon = <GiEvilMoon size={30} />;
+      selectedIcon = <GiEvilMoon size={30} className='text-yellow-500' />;
       break;
     case "valentine":
-      selectedIcon = <GiHeartStake size={30} />;
+      selectedIcon = <GiHeartStake size={30} className='text-yellow-500' />;
       break;
     default:
-      selectedIcon = <FiSun size={30} />;
+      selectedIcon = <FiSun size={30} className='text-yellow-500' />;
   }
 
   return (

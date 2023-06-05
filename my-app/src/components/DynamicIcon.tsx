@@ -35,14 +35,14 @@ const DynamicIcon = () => {
   }, [rotation, direction, shakeCount, isPaused]);
 
   return (
-    <div className="fixed left-20 bottom-20 w-6 h-6">
-        <Link href={"/"}>
-            <FiPhoneCall
-                size={80}
-                className="origin-center transform"
-                style={{ transform: `rotate(${rotation}deg)` }}
-            />
-        </Link>
+    <div className="fixed left-20 bottom-20 w-6 h-6 z-10">
+      <Link href="/">
+          <FiPhoneCall
+            size={50}
+            className="origin-center transform text-yellow-500"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          />
+      </Link>
     </div>
   );
 };
