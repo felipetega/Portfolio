@@ -20,7 +20,7 @@ export default function RootLayout({children}: {
       <head>
 
       </head>
-      <body className='my-5 "mx-2 md:mx-10 lg:mx-36 xl:mx-48 2xl:mx-60'>
+      <body className='my-5 mx-20 md:mx-20 lg:mx-36 xl:mx-48 2xl:mx-60'>
         <header>
           <Logo />
           <Navbar />
