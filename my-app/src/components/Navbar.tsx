@@ -9,9 +9,8 @@ const Navbar = () => {
     <nav className="navbar border-b-4 border-black mb-8 justify-between text-lg font-medium">
 
       <ul className="menu menu-horizontal px-1">
-        <li><Link href={"/"}>Quem sou eu?</Link></li>
+        <li><Link href={"/"}>Principal</Link></li>
         <li><Link href={"/projetos"}>Projetos</Link></li>
-        <li><Link href={"/"}>Skills</Link></li>
       </ul>
 
       <ul className="menu menu-horizontal px-1">

@@ -22,7 +22,7 @@ export default function page() {
       </CardSection>
 
       <CardSection sectionName="Stack: JavaScript">
-        <SmallCard title="Jogo da Velha" date="18/09/2022" description="JavaScript puro" src="/velha.png"  />
+        <SmallCard title="Jogo da Velha" date="18/09/2022" description="Jogo" src="/velha.png"  />
         <SmallCard title="Cursos Realizados" date="12/06/2022" description="Gerador de gráfico" src="/cursos.png"  />
       </CardSection>
 
