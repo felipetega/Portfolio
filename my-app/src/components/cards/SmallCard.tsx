@@ -3,7 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Modal from '../Modal';
-import Link from "next/link";
 
 
 interface SmallCardProps {
@@ -33,8 +32,8 @@ export default function SmallCard({ src, title, description, date }: SmallCardPr
 
   return (
     <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full">
-      <figure>
-        <Image className="card" src={src} alt="me" fill sizes="(max-width: 768px) 100vw" />
+      <figure className='card'>
+        <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw" />
       </figure>
       <div className="card-body">
         <h2 className="card-title font-black">{title}</h2>
