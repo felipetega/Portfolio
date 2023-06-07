@@ -6,13 +6,13 @@ const Logo = () => {
 
     <div className='flex flex-row items-center justify-center p-2'>
 
-        <div className='mr-2'>
+        <div className='mr-2 text-primary'>
 
             <TbCode size={50} />
 
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-secondary">
 
             <div className="flex">
                 <TbLetterF />

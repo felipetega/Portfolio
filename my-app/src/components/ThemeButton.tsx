@@ -8,6 +8,7 @@ import { GiNightSky, GiEvilMoon, GiSun, GiHeartStake } from "react-icons/gi";
 const ThemeButton = () => {
   const [mode, setMode] = useState("");
 
+  /*
   useEffect(() => {
     const savedMode = localStorage.getItem('themeMode');
     if (savedMode) {
@@ -17,6 +18,7 @@ const ThemeButton = () => {
       themeChange(false);
     }
   }, []);
+  */
 
   const handleToggleTheme = (event: ChangeEvent<HTMLSelectElement>) => {
     const newMode = event.target.value;
@@ -36,9 +38,6 @@ const ThemeButton = () => {
     case "halloween":
       selectedIcon = <GiEvilMoon size={30} className='text-yellow-500' />;
       break;
-    case "valentine":
-      selectedIcon = <GiHeartStake size={30} className='text-yellow-500' />;
-      break;
     default:
       selectedIcon = <FiSun size={30} className='text-yellow-500' />;
   }
@@ -50,7 +49,6 @@ const ThemeButton = () => {
         <option value="light">Light</option>
         <option value="dark">Dark</option>
         <option value="halloween">Halloween</option>
-        <option value="valentine">Valentine</option>
       </select>
     </div>
   );

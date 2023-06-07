@@ -2,6 +2,7 @@
 import SmallCard from "@/components/cards/SmallCard";
 import CardSection from "@/components/cards/CardSection";
 
+
 export default function page() {
   return (
     <div>

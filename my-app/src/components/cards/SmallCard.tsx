@@ -31,7 +31,7 @@ export default function SmallCard({ src, title, description, date }: SmallCardPr
 
 
   return (
-    <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full">
+    <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full hover:translate-y-[-5px] transition-transform duration-300 border-2 border-secondary">
       <figure className='card'>
         <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw" />
       </figure>
