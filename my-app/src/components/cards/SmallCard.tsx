@@ -9,9 +9,11 @@ interface SmallCardProps {
   description: string;
   date: string;
   stack: IconType[];
+  siteUrl: string;
+  showSiteButton: boolean;
 }
 
-export default function SmallCard({ src, title, description, date, stack }: SmallCardProps) {
+export default function SmallCard({ src, title, description, date, stack, siteUrl, showSiteButton }: SmallCardProps) {
 
   const modalContent = (
     <div>
@@ -43,11 +45,13 @@ export default function SmallCard({ src, title, description, date, stack }: Smal
         <button className="btn btn-primary">
             Ver repositório
           </button>
-          <a href="https://www.w3schools.com" target="_blank">
-            <button className="btn btn-primary">
-              Ver site
-            </button>
-          </a>
+          {showSiteButton ? (
+        <a href={siteUrl} target="_blank">
+          <button className="btn btn-primary">
+            Ver site
+          </button>
+        </a>
+      ) : null}
         </div>
       </div>
     </div>
