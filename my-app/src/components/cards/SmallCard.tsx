@@ -1,20 +1,17 @@
-'use client'
-
 import React from 'react';
 import Image from 'next/image';
 import Modal from '../Modal';
-
+import { IconType } from 'react-icons';
 
 interface SmallCardProps {
   src: string;
   title: string;
   description: string;
   date: string;
+  stack: IconType[];
 }
 
-export default function SmallCard({ src, title, description, date }: SmallCardProps) {
-
-  const [modalOpen, setModalOpen] = React.useState(false);
+export default function SmallCard({ src, title, description, date, stack }: SmallCardProps) {
 
   const modalContent = (
     <div>
@@ -27,26 +24,32 @@ export default function SmallCard({ src, title, description, date }: SmallCardPr
       </div>
     </div>
   );
-  
-
 
   return (
     <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full hover:translate-y-[-5px] transition-transform duration-300 border-2 border-secondary">
-      <figure className='card'>
+      <figure className="card">
         <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw" />
       </figure>
       <div className="card-body">
         <h2 className="card-title font-black">{title}</h2>
         <p className="font-bold">{date}</p>
         <p className="font-bold">{description}</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary" onClick={() => setModalOpen(true)}>Ver repositório</button>
+        <div className="card-stack flex">
+          {stack.map((Icon, index) => (
+            <Icon size={30} key={index} className="card-stack-icon mx-2" />
+          ))}
+        </div>
+        <div className="card-actions justify-between">
+        <button className="btn btn-primary">
+            Ver repositório
+          </button>
+          <a href="https://www.w3schools.com" target="_blank">
+            <button className="btn btn-primary">
+              Ver site
+            </button>
+          </a>
         </div>
       </div>
-      <Modal modalOpen={modalOpen} setModalOpen={setModalOpen}>
-        {modalContent}
-      </Modal>
     </div>
   );
-  
 }

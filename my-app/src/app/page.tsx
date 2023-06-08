@@ -22,7 +22,7 @@ export default function Home() {
   </div>
 
   <div>
-    <Image className="card bg-black hover:translate-y-[-5px] transition-transform duration-300" src="/profile2.png" alt="me" height={400} width={300} />
+    <Image className="card bg-primary hover:translate-y-[-5px] transition-transform duration-300" src="/profile.png" alt="me" height={400} width={300} />
   </div>
 
 </div>
