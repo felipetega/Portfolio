@@ -18,16 +18,16 @@ export default function page() {
   const nextJsStack = () => (
     <>
       <div className="tooltip" data-tip="NextJS">
-        <SiNextdotjs size={40} fill="black" className="mx-2" />
+        <SiNextdotjs size={30} fill="black" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="Typescript">
-        <SiTypescript size={40} fill="#007ACC" className="mx-2" />
+        <SiTypescript size={30} fill="#007ACC" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="ReactJS">
-        <SiReact size={40} fill="#61DAFB" className="mx-2" />
+        <SiReact size={30} fill="#61DAFB" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="TailwindCSS">
-        <SiTailwindcss size={40} fill="#06B6D4" className="mx-2" />
+        <SiTailwindcss size={30} fill="#06B6D4" className="mx-2" />
       </div>
     </>
   );
@@ -35,13 +35,13 @@ export default function page() {
   const djangoStack = () => (
     <>
       <div className="tooltip" data-tip="Django">
-        <SiDjango size={40} fill="#092E20" className="mx-2" />
+        <SiDjango size={30} fill="#092E20" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="Python">
-        <SiPython size={40} fill="black" className="mx-2" />
+        <SiPython size={30} fill="black" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="Bootstrap">
-        <SiBootstrap size={40} fill="#7952B3" className="mx-2" />
+        <SiBootstrap size={30} fill="#7952B3" className="mx-2" />
       </div>
     </>
   );
@@ -49,10 +49,10 @@ export default function page() {
   const pandasStack = () => (
     <>
       <div className="tooltip" data-tip="Python">
-        <SiPython size={40} fill="black" className="mx-2" />
+        <SiPython size={30} fill="black" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="Pandas">
-        <SiPandas size={40} fill="#150458" className="mx-2" />
+        <SiPandas size={30} fill="#150458" className="mx-2" />
       </div>
     </>
   );
@@ -60,13 +60,13 @@ export default function page() {
   const javascriptStack = () => (
     <>
       <div className="tooltip" data-tip="Javascript">
-        <SiJavascript size={40} fill="#F7DF1E" className="mx-2" />
+        <SiJavascript size={30} fill="#F7DF1E" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="HTML5">
-        <SiHtml5 size={40} fill="#E34F26" className="mx-2" />
+        <SiHtml5 size={30} fill="#E34F26" className="mx-2" />
       </div>
       <div className="tooltip" data-tip="CSS3">
-        <SiCss3 size={40} fill="#1572B6" className="mx-2" />
+        <SiCss3 size={30} fill="#1572B6" className="mx-2" />
       </div>
     </>
   );

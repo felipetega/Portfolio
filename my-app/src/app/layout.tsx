@@ -2,7 +2,6 @@ import './globals.css'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Logo from "../components/Logo";
-import DynamicIcon from "../components/DynamicIcon";
 
 //FONTS
 import { Montserrat } from 'next/font/google';
@@ -28,7 +27,6 @@ export default function RootLayout({children}: {
         <main>
           {children}
         </main>
-        <DynamicIcon />
         <Footer />
       </body>
     </html>
