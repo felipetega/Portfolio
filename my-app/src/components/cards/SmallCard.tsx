@@ -43,11 +43,11 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
         </div>
         <div className="card-actions justify-between">
         <button className="btn btn-primary">
-            Ver repositório
+            Repositório
           </button>
           {showSiteButton ? (
         <a href={siteUrl} target="_blank">
-          <button className="btn btn-primary">
+          <button className="btn btn-secondary">
             Ver site
           </button>
         </a>
