@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'animate.css';
+
 /*
 :root {
 /*  --my-color: #000;*/

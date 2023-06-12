@@ -5,6 +5,7 @@ import {
   SiPython, SiDjango, 
   SiCsharp, SiDotnet
  } from "react-icons/si";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -15,12 +16,7 @@ export default function Home() {
 <div className="flex flex-wrap items-center justify-evenly mb-40">
 
 
-  <div className="mb-10">
-    <p className="text-xl font-medium mb-2">Desenvolvedor Web FullStack</p>
-    <p className="text-xl font-medium mb-2">Focado nas melhores tecnologias de desenvolvimento</p>
-    <p className="text-xl font-medium mb-2">Apaixonado por desafios de código</p>
-    <p className="text-xl font-medium mb-2">Buscando oportunidades para atuar na área</p>
-  </div>
+    <AboutMe/>
 
   <div>
     <Image className="card bg-primary hover:translate-y-[-5px] transition-transform duration-300" src="/profile.png" alt="me" height={400} width={300} />

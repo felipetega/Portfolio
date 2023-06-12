@@ -8,17 +8,7 @@ import { GiNightSky, GiEvilMoon, GiSun, GiHeartStake } from "react-icons/gi";
 const ThemeButton = () => {
   const [mode, setMode] = useState("");
 
-  /*
-  useEffect(() => {
-    const savedMode = localStorage.getItem('themeMode');
-    if (savedMode) {
-      setMode(savedMode);
-      themeChange(savedMode === '');
-    } else {
-      themeChange(false);
-    }
-  }, []);
-  */
+
 
   const handleToggleTheme = (event: ChangeEvent<HTMLSelectElement>) => {
     const newMode = event.target.value;
