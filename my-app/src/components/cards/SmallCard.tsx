@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Modal from '../Modal';
+// import Modal from '../Modal';
 import { IconType } from 'react-icons';
 
 interface SmallCardProps {
