@@ -9,23 +9,14 @@ interface SmallCardProps {
   description: string;
   date: string;
   stack: IconType[];
+  repoUrl: string;
   siteUrl: string;
   showSiteButton: boolean;
+  inUrl: string;
+  showInButton: boolean;
 }
 
-export default function SmallCard({ src, title, description, date, stack, siteUrl, showSiteButton }: SmallCardProps) {
-
-  const modalContent = (
-    <div>
-      <h2 className="card-title font-black mb-2">Deseja ir para o repositório?</h2>
-      <p className="font-black">{title}</p>
-      <p className="font-bold">{date}</p>
-      <p className="font-bold">{description}</p>
-      <div className="card-actions justify-end">
-        <button className="btn btn-primary">Ir para o GitHub</button>
-      </div>
-    </div>
-  );
+export default function SmallCard({ src, title, description, date, stack, siteUrl, repoUrl, showSiteButton, inUrl, showInButton }: SmallCardProps) {
 
   return (
     <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full hover:translate-y-[-5px] transition-transform duration-300 border-2 border-secondary">
@@ -42,13 +33,22 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
           ))}
         </div>
         <div className="card-actions justify-between">
-        <button className="btn btn-primary">
-            Repositório
+        <a href={repoUrl} target="_blank"> {/* Link para o repositório */}
+          <button className="btn btn-primary text-xs px-2 py-1">
+            GitHub
           </button>
+        </a>
+        {showInButton ? (
+        <a href={inUrl} target="_blank">
+          <button className="btn btn-secondary text-xs px-2 py-1">
+            Vídeo
+          </button>
+        </a>
+      ) : null}
           {showSiteButton ? (
         <a href={siteUrl} target="_blank">
-          <button className="btn btn-secondary">
-            Ver site
+          <button className="btn btn-secondary text-xs px-2 py-1">
+            Site
           </button>
         </a>
       ) : null}

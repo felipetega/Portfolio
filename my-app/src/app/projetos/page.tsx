@@ -78,25 +78,24 @@ export default function page() {
       <h1 className="text-4xl font-black mb-10">Projetos</h1>
 
       <CardSection sectionName="">
-        <SmallCard title="ToDoList" date="14/05/2023" description="CRUD completo" src="/todolist3.png" stack={[nextJsStack]} siteUrl="" showSiteButton={false}/>
+        <SmallCard title="ToDoList" date="14/05/2023" description="Videoaula" src="/todolist3.png" stack={[nextJsStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ToDoList-NextJS" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7069644328750526465/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7069644328750526465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29"/>
       </CardSection>
 
       <CardSection sectionName="">
-        <SmallCard title="Tech SeuBoné" date="05/02/2023" description="Requisitos completos" src="/seubone.png" stack={[djangoStack]} siteUrl="" showSiteButton={false}/>
-        <SmallCard title="E-commerce" date="15/01/2023" description="Carrinho completo" src="/e-commerce.png" stack={[djangoStack]} siteUrl="" showSiteButton={false}/>
-        <SmallCard title="Seletive" date="04/12/2022" description="CRUD completo" src="/seletive.png" stack={[djangoStack]} siteUrl="" showSiteButton={false}/>
+        <SmallCard title="Tech SeuBoné" date="05/02/2023" description="Processo seletivo" src="/seubone.png" stack={[djangoStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/Processo-Seletivo-Tech" showInButton={false} inUrl=""/>
+        <SmallCard title="E-commerce" date="15/01/2023" description="Processo seletivo" src="/e-commerce.png" stack={[djangoStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/e-commerce" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7020775918071652352/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7020775918071652352%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29"/>
+        <SmallCard title="Seletive" date="04/12/2022" description="Curso" src="/seletive.png" stack={[djangoStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/GerenciadorDeProcessosSeletivos" showInButton={true} inUrl="https://www.linkedin.com/posts/felipetega_html-css-bootstrap-activity-7008087467245330435-k5hE?utm_source=share&utm_medium=member_desktop"/>
       </CardSection>
 
       <CardSection sectionName="">
-        <SmallCard title="Progresso Codewars" date="17/07/2022" description="Gerador de gráfico" src="/codewars.png" stack={[pandasStack]} siteUrl="" showSiteButton={false}/>
-        <SmallCard title="Email & Report" date="10/07/2022" description="Ciência de Dados" src="/email.png" stack={[pandasStack]} siteUrl="" showSiteButton={false}/>
+        <SmallCard title="Progresso Codewars" date="17/07/2022" description="Gerador de gráfico" src="/codewars.png" stack={[pandasStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ProgessoCodeWars" showInButton={false} inUrl=""/>
+        <SmallCard title="Email & Report" date="10/07/2022" description="Curso" src="/email.png" stack={[pandasStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/EmailAndReport" showInButton={false} inUrl=""/>
       </CardSection>
 
       <CardSection sectionName="">
-        <SmallCard title="Jogo da Velha" date="18/09/2022" description="Jogo" src="/velha.png" stack={[javascriptStack]} siteUrl="https://felipetega.github.io/Jogo-Da-Velha/" showSiteButton={true}/>
-        <SmallCard title="Cursos Realizados" date="12/06/2022" description="Gerador de gráfico" src="/cursos.png" stack={[javascriptStack]} siteUrl="https://felipetega.github.io/CursosRealizados-CHART.JS/" showSiteButton={true}/>
+        <SmallCard title="Jogo da Velha" date="18/09/2022" description="Jogo" src="/velha.png" stack={[javascriptStack]} siteUrl="https://felipetega.github.io/Jogo-Da-Velha/" showSiteButton={true} repoUrl="https://github.com/felipetega/Jogo-Da-Velha" showInButton={false} inUrl=""/>
+        <SmallCard title="Cursos Realizados" date="12/06/2022" description="Gerador de gráfico" src="/cursos.png" stack={[javascriptStack]} siteUrl="https://felipetega.github.io/CursosRealizados-CHART.JS/" showSiteButton={true} repoUrl="https://github.com/felipetega/CursosRealizados-CHART.JS" showInButton={false} inUrl=""/>
       </CardSection>
-
   </div>
   )
 }

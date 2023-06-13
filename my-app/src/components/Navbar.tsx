@@ -13,11 +13,11 @@ const Navbar = () => {
   <li><Link href={"/"}>Principal</Link></li>
   <li><Link href={"/projetos"}>Projetos</Link></li>
   <li className="flex items-center">
-    <Link href={""}>Contato
+  <a href="mailto:felipe.crema.ribeiro@gmail.com" target="_blank">Contato
     <span>
       <DynamicIcon />
     </span>
-    </Link>
+    </a>
   </li>
 </ul>
 
@@ -25,16 +25,18 @@ const Navbar = () => {
       <ul className="menu menu-horizontal px-1">
 
         <li>
-          <Link href={"/"}>
-            <AiFillLinkedin size={30}/>
-          </Link>
+          <a href="https://www.linkedin.com/in/felipetega/" target="_blank">
+            <AiFillLinkedin size={30} />
+          </a>
         </li>
 
         <li>
-          <Link href={"/"}>
-            <AiFillGithub size={30}/>
-          </Link>
+          <a href="https://github.com/felipetega" target="_blank">
+            <AiFillGithub size={30} />
+          </a>
         </li>
+
+
 
         <li>
           <ThemeButton />
