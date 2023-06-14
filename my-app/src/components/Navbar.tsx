@@ -4,6 +4,8 @@ import ThemeButton from './ThemeButton';
 import { AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import DynamicIcon from "./DynamicIcon";
 import NavbarContact from "./NavbarContact";
+import NavbarLinkedin from "./NavbarLinkedin";
+import NavbarGithub from "./NavbarGithub";
 
 const Navbar = () => {
 
@@ -19,17 +21,9 @@ const Navbar = () => {
 
       <ul className="menu menu-horizontal px-1">
 
-        <li>
-          <a href="https://www.linkedin.com/in/felipetega/" target="_blank">
-            <AiFillLinkedin size={30} />
-          </a>
-        </li>
+      <NavbarLinkedin/>
 
-        <li>
-          <a href="https://github.com/felipetega" target="_blank">
-            <AiFillGithub size={30} />
-          </a>
-        </li>
+      <NavbarGithub/>
 
 
 
