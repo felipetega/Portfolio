@@ -3,6 +3,7 @@ import Link from "next/link";
 import ThemeButton from './ThemeButton';
 import { AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import DynamicIcon from "./DynamicIcon";
+import NavbarContact from "./NavbarContact";
 
 const Navbar = () => {
 
@@ -12,13 +13,7 @@ const Navbar = () => {
 <ul className="menu menu-horizontal px-1">
   <li><Link href={"/"}>Principal</Link></li>
   <li><Link href={"/projetos"}>Projetos</Link></li>
-  <li className="flex items-center">
-  <a href="mailto:felipe.crema.ribeiro@gmail.com" target="_blank">Contato
-    <span>
-      <DynamicIcon />
-    </span>
-    </a>
-  </li>
+  <NavbarContact/>
 </ul>
 
 
