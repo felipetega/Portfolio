@@ -25,10 +25,10 @@ const NavbarGithub = () => {
       {modalOpen && (
         <Modal modalOpen={modalOpen} setModalOpen={handleModalClose}>
           {/* Conteúdo do modal */}
-          <h1 className='mb-4 font-bold'>Deseja abrir meu perfil do Github?</h1>
+          <h1 className='font-bold'>Deseja abrir meu perfil do Github?</h1>
           <a href="https://github.com/felipetega" target="_blank">
-          <button className="btn btn-primary text-xs px-2 py-1"
-          onClick={handleModalClose}>
+          <button className="btn btn-primary text-xs"
+          >
             Ir para Github
           </button>
         </a>

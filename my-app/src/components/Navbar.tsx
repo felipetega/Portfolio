@@ -6,6 +6,7 @@ import DynamicIcon from "./DynamicIcon";
 import NavbarContact from "./NavbarContact";
 import NavbarLinkedin from "./NavbarLinkedin";
 import NavbarGithub from "./NavbarGithub";
+import {Menu} from "./Menu";
 
 const Navbar = () => {
 
@@ -18,20 +19,8 @@ const Navbar = () => {
   <NavbarContact/>
 </ul>
 
+  <Menu/>
 
-      <ul className="menu menu-horizontal px-1">
-
-      <NavbarLinkedin/>
-
-      <NavbarGithub/>
-
-
-
-        <li>
-          <ThemeButton />
-        </li>
-        
-      </ul>
 </nav>
   )
 }
