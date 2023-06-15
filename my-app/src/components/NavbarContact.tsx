@@ -17,8 +17,8 @@ const NavbarContact = () => {
   return (
     <>
       <li className="flex items-center" onClick={handleModalOpen}>
-      <span>
-        Contato
+        <span>
+          Contato
           <DynamicIcon />
         </span>
       </li>
@@ -28,10 +28,13 @@ const NavbarContact = () => {
           {/* Conteúdo do modal */}
           <h1 className='mb-4 font-bold'>Deseja abrir uma aba de e-mail?</h1>
           <a href="mailto:felipe.crema.ribeiro@gmail.com" target="_blank">
-          <button className="btn btn-primary text-xs px-2 py-1">
-            Ir para e-mail
-          </button>
-        </a>
+            <button
+              className="btn btn-primary text-xs px-2 py-1"
+              onClick={handleModalClose}
+            >
+              Ir para e-mail
+            </button>
+          </a>
         </Modal>
       )}
     </>

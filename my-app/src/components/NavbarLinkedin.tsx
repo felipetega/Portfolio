@@ -27,7 +27,8 @@ const NavbarLinkedin = () => {
           {/* Conteúdo do modal */}
           <h1 className='mb-4 font-bold'>Deseja abrir meu perfil do Linkedin?</h1>
           <a href="https://www.linkedin.com/in/felipetega/" target="_blank">
-          <button className="btn btn-primary text-xs px-2 py-1">
+          <button className="btn btn-primary text-xs px-2 py-1"
+          onClick={handleModalClose}>
             Ir para LinkedIn
           </button>
         </a>
