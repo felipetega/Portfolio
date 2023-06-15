@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 // import Modal from '../Modal';
 import { IconType } from 'react-icons';
+import { AiFillGithub, AiFillLinkedin, AiOutlineDesktop} from 'react-icons/ai';
 
 interface SmallCardProps {
   src: string;
@@ -35,20 +36,20 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
         <div className="card-actions justify-between">
         <a href={repoUrl} target="_blank"> {/* Link para o repositório */}
           <button className="btn btn-primary text-xs px-2 py-1">
-            GitHub
+                <AiFillGithub size={30} />
           </button>
         </a>
         {showInButton ? (
         <a href={inUrl} target="_blank">
           <button className="btn btn-secondary text-xs px-2 py-1">
-            Vídeo
+                <AiFillLinkedin size={30} />
           </button>
         </a>
       ) : null}
           {showSiteButton ? (
         <a href={siteUrl} target="_blank">
-          <button className="btn btn-secondary text-xs px-2 py-1">
-            Site
+          <button className="btn text-yellow-500 text-xs px-2 py-1">
+          <AiOutlineDesktop size={30} />
           </button>
         </a>
       ) : null}
@@ -57,3 +58,4 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
     </div>
   );
 }
+
