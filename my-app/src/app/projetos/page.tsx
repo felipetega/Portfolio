@@ -94,7 +94,7 @@ export default function page() {
       </CardSection>
 
       <CardSection sectionName="">
-        <SmallCard title="Cardápio Digital" date="14/06/2023" description="Faculdade" src="/rangotop.png" stack={[dotnetStack]} siteUrl="" showSiteButton={false} repoUrl="" showInButton={false} inUrl=""/>
+        <SmallCard title="Cardápio Digital" date="14/06/2023" description="Faculdade" src="/rangotop.png" stack={[dotnetStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ProjetoIntegrador-FATEC" showInButton={false} inUrl=""/>
       </CardSection>
 
       <CardSection sectionName="">
