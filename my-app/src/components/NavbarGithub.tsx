@@ -28,7 +28,7 @@ const NavbarGithub = () => {
           <h1 className='mb-4 font-bold'>Deseja abrir meu perfil do Github?</h1>
           <a href="https://github.com/felipetega" target="_blank">
           <button className="btn btn-primary text-xs px-2 py-1"
-          >
+          onClick={handleModalClose}>
             Ir para Github
           </button>
         </a>
