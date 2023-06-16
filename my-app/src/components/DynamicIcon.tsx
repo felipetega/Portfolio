@@ -27,7 +27,7 @@ const DynamicIcon = () => {
           setTimeout(() => {
             setIsPaused(false);
             setShakeCount(0);
-          }, 3000); // Pausa de 3 segundos antes de retomar o movimento
+          }, 2000); // Pausa de 3 segundos antes de retomar o movimento
         }
       }
     }, 50);
