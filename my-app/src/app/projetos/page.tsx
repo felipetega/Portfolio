@@ -7,7 +7,8 @@ import
   SiNextdotjs, SiTypescript, SiReact, SiTailwindcss,
   SiDjango, SiPython, SiBootstrap,
   SiPandas,
-  SiJavascript, SiHtml5, SiCss3
+  SiJavascript, SiHtml5, SiCss3,
+  SiDotnet, SiCsharp
 } from 'react-icons/si';
 
 
@@ -70,12 +71,31 @@ export default function page() {
       </div>
     </>
   );
+
+  const dotnetStack = () => (
+    <>
+      <div className="tooltip" data-tip="ASP .NET CORE">
+        <SiDotnet size={30} fill="black" className="mx-2" />
+      </div>
+      <div className="tooltip" data-tip="C#">
+        <SiCsharp size={30} fill="black" className="mx-2" />
+      </div>
+    </>
+  );
   
   
 
   return (
     <div>
       <h1 className="text-4xl font-black mb-10">Projetos</h1>
+
+      <CardSection sectionName="">
+        <SmallCard title="Portfolio" date="16/06/2023" description="Esse portfolio" src="/portfolio.png" stack={[nextJsStack]} siteUrl="" showSiteButton={true} repoUrl="https://github.com/felipetega/Portfolio" showInButton={false} inUrl=""/>
+      </CardSection>
+
+      <CardSection sectionName="">
+        <SmallCard title="Cardápio Digital" date="14/06/2023" description="Faculdade" src="/rangotop.png" stack={[dotnetStack]} siteUrl="" showSiteButton={false} repoUrl="" showInButton={false} inUrl=""/>
+      </CardSection>
 
       <CardSection sectionName="">
         <SmallCard title="ToDoList" date="14/05/2023" description="Videoaula" src="/todolist3.png" stack={[nextJsStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ToDoList-NextJS" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7069644328750526465/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7069644328750526465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29"/>
