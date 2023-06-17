@@ -6,7 +6,7 @@ const Footer = () => {
 
 <p>Copyright © 2023 - All right reserved</p>
 
-<p>By <span className='text-secondary font-black'>felipetega</span></p>
+<p>By <span className='font-black'>felipetega</span></p>
     
 </footer>
 

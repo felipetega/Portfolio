@@ -40,9 +40,9 @@ export const Menu = () => {
   if (isSmallScreen) {
     return (
       <div>
-        <button className="menu-icon" onClick={toggleMenu}>
+        <div className="menu-icon" onClick={toggleMenu}>
           <AiOutlineMenu size={30}/>
-        </button>
+        </div>
 
         <Modal modalOpen={isModalOpen} setModalOpen={setModalOpen}>
           {/* Conteúdo do modal */}
