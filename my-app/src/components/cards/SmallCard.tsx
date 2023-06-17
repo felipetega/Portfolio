@@ -22,7 +22,7 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
   return (
     <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full hover:translate-y-[-5px] transition-transform duration-300 border-2 border-secondary">
       <figure className="card">
-        <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw" />
+        <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw" />
       </figure>
       <div className="card-body">
         <h2 className="card-title font-black">{title}</h2>

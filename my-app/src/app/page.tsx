@@ -19,7 +19,7 @@ export default function Home() {
     <AboutMe/>
 
   <div>
-    <Image priority={true} className="card bg-primary hover:translate-y-[-5px] transition-transform duration-300" src="/profile.png" alt="me" height={400} width={300} />
+    <Image priority={true} className="card bg-primary hover:translate-y-[-5px] transition-transform duration-300" src="/profile.webp" alt="me" height={400} width={300} />
   </div>
 
 </div>
