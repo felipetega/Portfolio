@@ -14,6 +14,13 @@ const NavbarContact = () => {
     setModalOpen(false);
   };
 
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('felipe.crema.ribeiro@gmail.com');
+    setIsCopied(true);
+  };
+
   return (
     <>
       <li className="flex items-center" onClick={handleModalOpen}>
@@ -26,15 +33,18 @@ const NavbarContact = () => {
       {modalOpen && (
         <Modal modalOpen={modalOpen} setModalOpen={handleModalClose}>
           {/* Conteúdo do modal */}
-          <h1 className='mb-4 font-bold'>Deseja abrir uma aba de e-mail?</h1>
+          <h1 className='mb-4 font-bold'>felipe.crema.ribeiro@gmail.com</h1>
+          <div className='flex justify-between'>
+          <button className="btn btn-primary text-xs px-2 py-1" onClick={handleCopy}>{isCopied ? 'E-mail copiado!' : 'Copiar e-mail'}</button>
           <a href="mailto:felipe.crema.ribeiro@gmail.com" target="_blank">
             <button
               className="btn btn-primary text-xs px-2 py-1"
               onClick={handleModalClose}
             >
-              Ir para e-mail
+              Abrir app e-mail
             </button>
           </a>
+            </div>
         </Modal>
       )}
     </>
