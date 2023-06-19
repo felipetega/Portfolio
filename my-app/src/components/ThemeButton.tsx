@@ -13,6 +13,9 @@ const ThemeButton = () => {
     if (savedMode) {
       setMode(savedMode);
       themeChange(savedMode === '');
+    } else {
+      setMode('light');
+      themeChange(false);
     }
   }, []);
 
