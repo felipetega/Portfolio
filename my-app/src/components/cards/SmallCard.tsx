@@ -35,22 +35,22 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
         </div>
         <div className="card-actions justify-between">
         <a href={repoUrl} target="_blank"> {/* Link para o repositório */}
-          <button className="btn btn-primary text-xs px-2 py-1 mt-4">
+          <div className="btn btn-primary text-xs px-2 py-1 mt-4">
                 <AiFillGithub size={30} />
-          </button>
+          </div>
         </a>
         {showInButton ? (
         <a href={inUrl} target="_blank">
-          <button className="btn btn-secondary text-xs px-2 py-1 mt-4">
+          <div className="btn btn-secondary text-xs px-2 py-1 mt-4">
                 <AiFillLinkedin size={30} />
-          </button>
+          </div>
         </a>
       ) : null}
           {showSiteButton ? (
         <a href={siteUrl} target="_blank">
-          <button className="btn text-yellow-500 text-xs px-2 py-1 mt-4">
+          <div className="btn text-yellow-500 text-xs px-2 py-1 mt-4">
           <AiOutlineDesktop size={30} />
-          </button>
+          </div>
         </a>
       ) : null}
         </div>
