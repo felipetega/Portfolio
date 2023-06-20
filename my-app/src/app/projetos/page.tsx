@@ -90,7 +90,7 @@ export default function page() {
       <h1 className="text-4xl font-black mb-10">Projetos</h1>
 
       <CardSection sectionName="">
-        <SmallCard title="Portfolio" date="16/06/2023" description="Esse portfolio" src="/portfolio2.webp" stack={[nextJsStack]} siteUrl="" showSiteButton={true} repoUrl="https://github.com/felipetega/Portfolio" showInButton={false} inUrl=""/>
+        <SmallCard title="Portfolio" date="20/06/2023" description="Esse portfolio" src="/portfolio2.webp" stack={[nextJsStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/Portfolio" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7076940187682971648/"/>
       </CardSection>
 
       <CardSection sectionName="">
