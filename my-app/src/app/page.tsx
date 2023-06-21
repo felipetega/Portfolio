@@ -8,6 +8,26 @@ import {
 import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
+
+  const educationData = [
+    {
+      title: 'Fatec',
+      descriptions: ['Desenvolvimento de Software Multiplataforma'],
+      date: '08/2022 - atual',
+    },
+    {
+      title: 'DIO - Digital Innovation One',
+      descriptions: ['Spread FullStack Developer', 'Órbi Web Games Developer'],
+      date: '04/2022 - 06/2022',
+    },
+    {
+      title: 'Curso em Vídeo',
+      descriptions: ['Javascript', 'Python 3 - Mundo 1, 2, 3'],
+      date: '03/2022 - 05/2022',
+    },
+  ];
+
+
   return (
     <div className="">
         <p className="text-xl font-medium">Bem vindos ao meu</p>
@@ -65,10 +85,16 @@ export default function Home() {
 
         </div>
         <h2 className="text-2xl font-bold mb-4">Cursos</h2>
-        <EducationCard title="Fatec" date="08/2022 - atual"/>
-        <EducationCard title="Digital Innovation One" date="04/2022 - 06/2022"/>
-        <EducationCard title="Curso em Vídeo" date="03/2022 - 05/2022"/>
-
+        <div>
+      {educationData.map((education) => (
+        <EducationCard
+          key={education.title}
+          title={education.title}
+          descriptions={education.descriptions}
+          date={education.date}
+        />
+      ))}
+    </div>
     </div>
   )
 }
