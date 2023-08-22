@@ -29,6 +29,14 @@ export default function Codewars({ username }: CodewarsProps) {
       });
   }, [username]);
 
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <div className="completed-challenges">
       <h3 className="text-xl font-bold mb-2">Desafios Concluídos:</h3>
@@ -47,7 +55,7 @@ export default function Codewars({ username }: CodewarsProps) {
               <tr key={challenge.id}>
                 {/* <td className="py-2 px-4">{challenge.id}</td> */}
                 <td className="py-2 px-4">{challenge.name}</td>
-                <td className="py-2 px-4">{challenge.completedAt}</td>
+                <td className="py-2 px-4">{formatDate(challenge.completedAt)}</td>
                 <td className="py-2 px-4">{challenge.completedLanguages.join(', ')}</td>
               </tr>
             ))}
