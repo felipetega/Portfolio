@@ -30,21 +30,29 @@ export default function Codewars({ username }: CodewarsProps) {
   }, [username]);
 
   return (
-    <div className="card bg-base-100 shadow-xl image-full mx-2 my-8 w-full hover:translate-y-[-5px] transition-transform duration-300 border-2 border-secondary">
-      <div className="card-body">
-        <div className="completed-challenges">
-          <h3>Desafios Concluídos:</h3>
-          <ul>
+    <div className="completed-challenges">
+      <h3 className="text-xl font-bold mb-2">Desafios Concluídos:</h3>
+      <div className="overflow-x-auto">
+        <table className="min-w-full border">
+          <thead>
+            <tr className="bg-primary">
+              {/* <th className="py-2 px-4">ID</th> */}
+              <th className="py-2 px-4">Nome</th>
+              <th className="py-2 px-4">Concluído em</th>
+              <th className="py-2 px-4">Linguagem</th>
+            </tr>
+          </thead>
+          <tbody>
             {completedChallenges.map(challenge => (
-              <li key={challenge.id}>
-                <p>{challenge.name}</p>
-                <p>Concluído em: {challenge.completedAt}</p>
-                <p>Linguagens: {challenge.completedLanguages.join(', ')}</p>
-              </li>
+              <tr key={challenge.id}>
+                {/* <td className="py-2 px-4">{challenge.id}</td> */}
+                <td className="py-2 px-4">{challenge.name}</td>
+                <td className="py-2 px-4">{challenge.completedAt}</td>
+                <td className="py-2 px-4">{challenge.completedLanguages.join(', ')}</td>
+              </tr>
             ))}
-          </ul>
-        </div>
-        {/* Resto do código do componente */}
+          </tbody>
+        </table>
       </div>
     </div>
   );
