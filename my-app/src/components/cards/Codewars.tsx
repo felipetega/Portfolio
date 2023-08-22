@@ -67,7 +67,6 @@ export default function Codewars({ username }: CodewarsProps) {
 
   return (
     <div className="completed-challenges">
-      <h3 className="text-xl font-bold mb-2">Desafios Concluídos:</h3>
       <div className="overflow-x-auto">
         <table className="min-w-full border">
           <thead>
