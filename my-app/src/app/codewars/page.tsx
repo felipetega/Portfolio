@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Codewars from "@/components/cards/Codewars";
 import CardSection from "@/components/cards/CardSection";
+import ContributionMap from "@/components/cards/ContributionMap";
 
 interface UserInfo {
   username: string;
@@ -89,6 +90,7 @@ export default function Page() {
           <p>Carregando informações...</p>
         )}
       </div>
+
       <Codewars username="felipetega" />
     </>
   );

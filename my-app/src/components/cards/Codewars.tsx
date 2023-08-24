@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ContributionMap from "@/components/cards/ContributionMap";
 
 interface CompletedChallenge {
   id: string;
@@ -65,7 +66,33 @@ export default function Codewars({ username }: CodewarsProps) {
     return `${day}/${month}/${year}`;
   };
 
+  const transformChallengesToContributions = (challenges: ChallengeWithRank[]): { date: Date; count: number }[] => {
+    const contributionsMap = new Map<string, number>();
+  
+    challenges.forEach(challenge => {
+      const completedDate = new Date(challenge.completedAt);
+      const formattedDate = completedDate.toISOString().split('T')[0];
+      
+      if (contributionsMap.has(formattedDate)) {
+        contributionsMap.set(formattedDate, contributionsMap.get(formattedDate)! + 1);
+      } else {
+        contributionsMap.set(formattedDate, 1);
+      }
+    });
+  
+    const contributionsData: { date: Date; count: number }[] = [];
+    contributionsMap.forEach((count, date) => {
+      contributionsData.push({ date: new Date(date), count });
+    });
+  
+    return contributionsData;
+  };
+  
+  const contributionsData = transformChallengesToContributions(completedChallenges);
+
   return (
+    <>
+      <ContributionMap data={contributionsData} />
     <div className="completed-challenges">
       <div className="overflow-x-auto">
         <table className="min-w-full border">
@@ -92,5 +119,6 @@ export default function Codewars({ username }: CodewarsProps) {
         </table>
       </div>
     </div>
+    </>
   );
 }
