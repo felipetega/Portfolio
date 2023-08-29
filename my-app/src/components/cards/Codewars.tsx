@@ -93,32 +93,33 @@ export default function Codewars({ username }: CodewarsProps) {
   return (
     <>
       <ContributionMap data={contributionsData} />
-    <div className="completed-challenges">
-      <div className="overflow-x-auto">
-        <table className="min-w-full border">
-          <thead>
-            <tr className="bg-primary">
-              {/* <th className="py-2 px-4">ID</th> */}
-              <th className="py-2 px-4">Nome</th>
-              <th className="py-2 px-4">Dificuldade</th>
-              <th className="py-2 px-4">Linguagem</th>
-              <th className="py-2 px-4">Concluído em</th>
-            </tr>
-          </thead>
-          <tbody>
-            {completedChallenges.map(challenge => (
-              <tr key={challenge.id}>
-                {/* <td className="py-2 px-4">{challenge.id}</td> */}
-                <td className="py-2 px-4">{challenge.name}</td>
-                <td className="py-2 px-4">{challenge.rank.name}</td>
-                <td className="py-2 px-4">{challenge.completedLanguages.join(', ')}</td>
-                <td className="py-2 px-4">{formatDate(challenge.completedAt)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
     </>
   );
 }
+
+    // <div className="completed-challenges">
+    //   <div className="overflow-x-auto">
+    //     <table className="min-w-full border">
+    //       <thead>
+    //         <tr className="bg-primary">
+    //           {/* <th className="py-2 px-4">ID</th> */}
+    //           <th className="py-2 px-4">Nome</th>
+    //           <th className="py-2 px-4">Dificuldade</th>
+    //           <th className="py-2 px-4">Linguagem</th>
+    //           <th className="py-2 px-4">Concluído em</th>
+    //         </tr>
+    //       </thead>
+    //       <tbody>
+    //         {completedChallenges.map(challenge => (
+    //           <tr key={challenge.id}>
+    //             {/* <td className="py-2 px-4">{challenge.id}</td> */}
+    //             <td className="py-2 px-4">{challenge.name}</td>
+    //             <td className="py-2 px-4">{challenge.rank.name}</td>
+    //             <td className="py-2 px-4">{challenge.completedLanguages.join(', ')}</td>
+    //             <td className="py-2 px-4">{formatDate(challenge.completedAt)}</td>
+    //           </tr>
+    //         ))}
+    //       </tbody>
+    //     </table>
+    //   </div>
+    // </div>

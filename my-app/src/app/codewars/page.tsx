@@ -45,6 +45,29 @@ export default function Page() {
 
   return (
     <>
+          <div className='mb-2'>
+        <h2 className="text-2xl font-bold mt-10">Perfil CodeWars</h2>
+        {userInfo ? (
+          <div>
+            <img src="https://www.codewars.com/users/felipetega/badges/large" alt="" className='my-4'/>
+            {/* <p className="text-xl">Usuário: <span className="text-xl font-medium">{userInfo.username}</span></p> */}
+            {/* <p>Nome: {userInfo.name}</p> */}
+            {/* <p className="text-xl">Honra: <span className="text-xl font-medium">{userInfo.honor}</span></p> */}
+            {/* <p className="text-xl">Clan: <span className="text-xl font-medium">{userInfo.clan}</span></p> */}
+            <p className="text-2xl font-medium mt-4">Ranking global: <span className="text-2xl font-bold mt-10">{userInfo.leaderboardPosition} #</span></p>
+            {/* <p>Skills: {userInfo.skills && userInfo.skills.length > 0 ? userInfo.skills.join(', ') : 'Nenhuma habilidade registrada'}</p> */}
+            {/* <p>Total de katas criados: {userInfo.codeChallenges.totalAuthored}</p> */}
+            <p className="text-2xl font-medium mt-4"><span className="text-2xl font-bold mt-10">{userInfo.codeChallenges.totalCompleted}</span> Desafios Concluídos: </p>
+            {/* <p className="text-xl">Rank geral: <span className="text-xl font-medium">{userInfo.ranks.overall.name}</span></p> */}
+            {/* <p>Posição no ranking geral: {userInfo.ranks.overall.rank}</p> */}
+            {/* Exiba outras informações relevantes aqui */}
+          </div>
+        ) : (
+          <p>Carregando informações...</p>
+        )}
+      </div>
+
+      <Codewars username="felipetega" />
     <h1 className="text-6xl font-bold mt-10">Codewars</h1>
     <div>
       <h2 className="text-2xl font-bold mt-10">Introdução à plataforma</h2>
@@ -69,29 +92,7 @@ export default function Page() {
           baixo. Depois de atingir o nível mestre, contamos para cima. Faixas pretas em artes 
           marciais são de nível Dan.</p>
     </div>
-      <div className='mb-2'>
-        <h2 className="text-2xl font-bold mt-10">Perfil CodeWars</h2>
-        {userInfo ? (
-          <div>
-            <img src="https://www.codewars.com/users/felipetega/badges/large" alt="" className='my-4'/>
-            {/* <p className="text-xl">Usuário: <span className="text-xl font-medium">{userInfo.username}</span></p> */}
-            {/* <p>Nome: {userInfo.name}</p> */}
-            {/* <p className="text-xl">Honra: <span className="text-xl font-medium">{userInfo.honor}</span></p> */}
-            {/* <p className="text-xl">Clan: <span className="text-xl font-medium">{userInfo.clan}</span></p> */}
-            <p className="text-2xl font-medium mt-4">Ranking global: <span className="text-2xl font-bold mt-10">{userInfo.leaderboardPosition} #</span></p>
-            {/* <p>Skills: {userInfo.skills && userInfo.skills.length > 0 ? userInfo.skills.join(', ') : 'Nenhuma habilidade registrada'}</p> */}
-            {/* <p>Total de katas criados: {userInfo.codeChallenges.totalAuthored}</p> */}
-            <p className="text-2xl font-medium mt-4"><span className="text-2xl font-bold mt-10">{userInfo.codeChallenges.totalCompleted}</span> Desafios Concluídos: </p>
-            {/* <p className="text-xl">Rank geral: <span className="text-xl font-medium">{userInfo.ranks.overall.name}</span></p> */}
-            {/* <p>Posição no ranking geral: {userInfo.ranks.overall.rank}</p> */}
-            {/* Exiba outras informações relevantes aqui */}
-          </div>
-        ) : (
-          <p>Carregando informações...</p>
-        )}
-      </div>
 
-      <Codewars username="felipetega" />
     </>
   );
 }
