@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mb-2">Já usei</h2>
+        <h2 className="text-2xl font-bold mb-2">Stack secundária</h2>
         <div className="flex justify-evenly mb-40">
 
           <div className="flex w-1/2 justify-evenly p-8 border-4 border-double border-secondary border-t-primary border-l-primary">
