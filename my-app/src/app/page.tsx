@@ -3,7 +3,8 @@ import EducationCard from "../components/EducationCard";
 import { 
   SiNextdotjs, SiReact, SiTypescript, SiTailwindcss, 
   SiPython, SiDjango, 
-  SiCsharp, SiDotnet
+  SiCsharp, SiDotnet,
+  SiJavascript, SiAmazonaws
  } from "react-icons/si";
 import AboutMe from "@/components/AboutMe";
 
@@ -46,23 +47,35 @@ export default function Home() {
 
 
 
-        <h2 className="text-2xl font-bold mb-2">Stack principal</h2>
-        <div className="flex justify-evenly max-w-screen-lg mx-auto mb-20 p-8 border-4 border-double border-secondary border-t-primary border-l-primary">
-          <div className="tooltip" data-tip="NextJS">
-            <SiNextdotjs size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
-          </div>
-          <div className="tooltip" data-tip="ReactJS">
-          <SiReact size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
-          </div>
-          <div className="tooltip" data-tip="Typescript">
-          <SiTypescript size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
-          </div>
-          <div className="tooltip" data-tip="TailwindCSS">
-          <SiTailwindcss size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
-          </div>
-        </div>
+        <h2 className="text-2xl font-bold mb-2">Stack</h2>
+        <div className="max-w-screen-lg mx-auto mb-20 p-8 border-4 border-double border-secondary border-t-primary border-l-primary">
+        <div className="flex justify-evenly mb-8">
+  <div className="tooltip" data-tip="NextJS">
+    <SiNextdotjs size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
+  </div>
+  <div className="tooltip" data-tip="AWS">
+    <SiAmazonaws size={50} className="hover:translate-y-[-5px] transition-transform duration-300"/>
+  </div>
+  <div className="tooltip" data-tip="Typescript">
+    <SiTypescript size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
+  </div>
+</div>
+<div className="flex justify-evenly">
+  <div className="tooltip" data-tip="ReactJS">
+    <SiReact size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
+  </div>
+  <div className="tooltip" data-tip="TailwindCSS">
+    <SiTailwindcss size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
+  </div>
+  <div className="tooltip" data-tip="Javascript">
+    <SiJavascript size={50} className="hover:translate-y-[-5px] transition-transform duration-300"/>
+  </div>
+</div>
 
-        <h2 className="text-2xl font-bold mb-2">Stack secundária</h2>
+</div>
+
+
+        {/* <h2 className="text-2xl font-bold mb-2">Stack secundária</h2>
         <div className="flex justify-evenly mb-40">
 
           <div className="flex w-1/2 justify-evenly p-8 border-4 border-double border-secondary border-t-primary border-l-primary">
@@ -83,7 +96,7 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
+        </div> */}
         <h2 className="text-2xl font-bold mb-4">Cursos</h2>
         <div>
       {educationData.map((education) => (
