@@ -4,7 +4,8 @@ import {
   SiNextdotjs, SiReact, SiTypescript, SiTailwindcss, 
   SiPython, SiDjango, 
   SiCsharp, SiDotnet,
-  SiJavascript, SiAmazonaws
+  SiJavascript, SiAmazonaws,
+  SiNodedotjs
  } from "react-icons/si";
 import AboutMe from "@/components/AboutMe";
 
@@ -53,8 +54,8 @@ export default function Home() {
   <div className="tooltip" data-tip="NextJS">
     <SiNextdotjs size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
   </div>
-  <div className="tooltip" data-tip="AWS">
-    <SiAmazonaws size={50} className="hover:translate-y-[-5px] transition-transform duration-300"/>
+  <div className="tooltip" data-tip="NodeJS">
+    <SiNodedotjs size={50} className="hover:translate-y-[-5px] transition-transform duration-300"/>
   </div>
   <div className="tooltip" data-tip="Typescript">
     <SiTypescript size={50} className="hover:translate-y-[-5px] transition-transform duration-300" />
