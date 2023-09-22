@@ -91,8 +91,16 @@ export default function page() {
 
       <CardSection>
         <SmallCard title="Portfolio" date="20/06/2023" description="Esse portfolio" src="/portfolio2.webp" stack={[nextJsStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/Portfolio" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7076940187682971648/"/>
+        <SmallCard title="ToDoList" date="14/05/2023" description="Lista de tarefas" src="/todolist3.webp" stack={[nextJsStack]} siteUrl="https://todolist-red-one.vercel.app/" showSiteButton={true} repoUrl="https://github.com/felipetega/ToDoList-NextJS" showInButton={false} inUrl=""/>
+      </CardSection>
+
+      <CardSection>
         <SmallCard title="App Cardápio" date="14/06/2023" description="Faculdade" src="/rangotop.webp" stack={[dotnetStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ProjetoIntegrador-FATEC" showInButton={false} inUrl=""/>
-        <SmallCard title="ToDoList" date="14/05/2023" description="Videoaula" src="/todolist3.webp" stack={[nextJsStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/ToDoList-NextJS" showInButton={true} inUrl="https://www.linkedin.com/feed/update/urn:li:activity:7069644328750526465/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7069644328750526465%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29"/>
+      </CardSection>
+
+      <CardSection>
+        <SmallCard title="Tech SeuBoné" date="05/02/2023" description="Processo seletivo" src="/seubone.webp" stack={[djangoStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/Processo-Seletivo-Tech" showInButton={false} inUrl=""/>
+        <SmallCard title="Seletive" date="04/12/2022" description="Curso" src="/seletive.webp" stack={[djangoStack]} siteUrl="" showSiteButton={false} repoUrl="https://github.com/felipetega/GerenciadorDeProcessosSeletivos" showInButton={true} inUrl="https://www.linkedin.com/posts/felipetega_html-css-bootstrap-activity-7008087467245330435-k5hE?utm_source=share&utm_medium=member_desktop"/>
       </CardSection>
 
       <CardSection>

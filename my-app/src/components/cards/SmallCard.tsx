@@ -25,31 +25,37 @@ export default function SmallCard({ src, title, description, date, stack, siteUr
         <Image src={src} alt="me" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
       </figure>
       <div className="card-body">
+        <div>
         <h2 className="card-title font-black">{title}</h2>
         <p className="font-bold">{date}</p>
         <p className="font-bold">{description}</p>
+          </div>
         <div className="card-stack flex">
           {stack.map((Icon, index) => (
             <Icon size={30} key={index} className="card-stack-icon mx-2" />
           ))}
         </div>
-        <div className="card-actions justify-between">
+        <div className="card-actions flex-col">
         <a href={repoUrl} target="_blank"> {/* Link para o repositório */}
           <div className="btn btn-primary text-xs px-2 py-1 mt-4">
-                <AiFillGithub size={30} />
+            <AiFillGithub size={30} />
+            <p>Github</p>
           </div>
         </a>
+
         {showInButton ? (
         <a href={inUrl} target="_blank">
           <div className="btn btn-secondary text-xs px-2 py-1 mt-4">
                 <AiFillLinkedin size={30} />
+                <p>Linkedin</p>
           </div>
         </a>
       ) : null}
           {showSiteButton ? (
         <a href={siteUrl} target="_blank">
-          <div className="btn text-yellow-500 text-xs px-2 py-1 mt-4">
+          <div className="btn text-xs px-2 py-1 mt-4">
           <AiOutlineDesktop size={30} />
+          <p>Ver site</p>
           </div>
         </a>
       ) : null}
